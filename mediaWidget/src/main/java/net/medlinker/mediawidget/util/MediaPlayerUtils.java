@@ -33,4 +33,20 @@ public class MediaPlayerUtils {
             return mFormatter.format("%02d:%02d", minutes, seconds).toString();
         }
     }
+
+    public static String generateTime(long time) {
+        int totalSeconds = (int) (time / 1000);
+
+        int seconds = totalSeconds % 60;
+        int minutes = (totalSeconds / 60) % 60;
+        int hours = totalSeconds / 3600;
+
+        if (hours > 0) {
+            return String.format(Locale.US, "%02d:%02d:%02d", hours, minutes,
+                    seconds).toString();
+        } else {
+            return String.format(Locale.US, "%02d:%02d", minutes, seconds)
+                    .toString();
+        }
+    }
 }

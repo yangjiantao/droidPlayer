@@ -4,23 +4,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!--todo 横竖屏切换更改layout高度、隐藏显示声音按钮 , 竖屏时暂时不要topLayout-->
-    <!--<include-->
-        <!--layout="@layout/video_blue_controller_top_view_portrait"/>-->
-    <ViewStub
-        android:id="@+id/landscape_toplayout_viewstub"
+    <net.medlinker.mediawidget.view.ControllerTopView
+        android:id="@+id/top_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout="@layout/video_blue_controller_top_view_landscape"/>
-
+        />
 
     <RelativeLayout
         android:id="@+id/video_progress_layout"
         android:layout_width="match_parent"
         android:layout_height="@dimen/controller_large_bottom_bg"
         android:layout_alignParentBottom="true"
-        android:alpha="0.95"
+        android:alpha="0.85"
         android:background="#1b1b1b">
 
         <!-- 暂停 -->
@@ -47,7 +43,7 @@
             android:textSize="14sp"/>
 
         <ImageView
-            android:id="@+id/video_window_screen_image_view"
+            android:id="@+id/video_fullscreen_switch_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
@@ -61,7 +57,7 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_marginRight="15dp"
-            android:layout_toLeftOf="@id/video_window_screen_image_view"
+            android:layout_toLeftOf="@id/video_fullscreen_switch_view"
             android:src="@drawable/video_volume_icon"/>
 
         <TextView

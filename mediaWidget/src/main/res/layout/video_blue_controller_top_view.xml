@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/controller_top_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/controller_large_bottom_bg"
+    android:alpha="0.95"
+    android:background="#1b1b1b">
+
+        <TextView
+            android:id="@+id/title_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/controller_large_top_margin"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="150dp"
+            android:ellipsize="end"
+            android:drawableLeft="@drawable/blue_ksy_back"
+            android:gravity="left|center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            tools:text="大讲堂"/>
+
+        <LinearLayout
+            android:id="@+id/controller_top_right_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/video_margin_right"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/video_top_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/video_margin_right"
+                    android:padding="6dp"
+                    android:text="高清"
+                    android:textColor="@color/gray_primary_dark"
+                    android:textSize="13sp"
+                    />
+
+                <TextView
+                    android:id="@+id/video_top_switch_parts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="6dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="6dp"
+                    android:paddingTop="6dp"
+                    android:text="选集"
+                    android:textColor="@color/gray_primary_dark"
+                    android:textSize="13sp"
+                    />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/image_more_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/small_margin_left"
+            android:src="@drawable/short_overflow_image"
+            />
+</RelativeLayout>

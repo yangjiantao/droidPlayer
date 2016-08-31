@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <dimen name="controller_fullscreen_top_view_height">48dp</dimen>
+    <dimen name="controller_normal_top_view_height">32dp</dimen>
+
     <dimen name="controller_bright_width">31dp</dimen>
     <dimen name="controller_bright_height">157dp</dimen>
     <dimen name="controller_large_top">60dp</dimen>
